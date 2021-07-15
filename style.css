@@ -89,16 +89,19 @@ h3 {
 .btnsearch {
   width: 100px;
   color: #fff;
-  border: 2px solid #0065fc;
+  border: 0px solid #0065fc;
   background-color: #0065fc;
   border-radius: 0 1em 1em 0;
   cursor: pointer;
+  transition: 0.3s;
 }
 .btnsearch:hover {
   color: #000;
   background-color: #beebff;
   border: none;
   border-radius: 0 1em 1em 0;
+  box-shadow: 3px 3px 8px #f2f2f2;
+  transition: 0.3s;
 }
 
 /* Icons */
@@ -123,6 +126,7 @@ h3 {
 .filters {
   font-weight: bold;
   margin-right: 20px;
+  margin-bottom: 10px;
 }
 
 .allbuttonsfilters {
@@ -136,6 +140,7 @@ h3 {
   display: flex;
   border-radius: 1.2em;
   margin-right: 20px;
+  margin-bottom: 10px;
   text-decoration: none;
   align-items: center;
   transition: 0.3s;
