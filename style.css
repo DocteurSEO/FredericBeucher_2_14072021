@@ -1,0 +1,185 @@
+@font-face {
+  font-family: "raleway";
+  src: url(police/Raleway-Medium.ttf);
+}
+* {
+  font-family: "raleway";
+}
+body {
+  margin: 0;
+  padding: 0px 50px 0px 50px;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  width: 100px;
+  position: absolute;
+  top: 15px;
+}
+
+/* Menu */
+nav {
+  display: flex;
+}
+nav div {
+  display: flex;
+  margin-right: 0px;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: auto;
+}
+.hebergements,
+.activites {
+  padding: 30px 20px 30px 20px;
+  text-decoration: none;
+  color: #000;
+  border-top: 2px solid#fff;
+}
+.inscrire {
+  padding: 30px 20px 30px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #0065fc;
+  border-top: 2px solid#fff;
+}
+nav div a:hover {
+  color: #0065fc;
+  border-top: 2px solid #0065fc;
+}
+
+/* text intro */
+.intro {
+  line-height: 80%;
+}
+h1 {
+  font-size: 1em;
+}
+h3 {
+  font-size: 0.7em;
+  font-weight: normal;
+}
+
+/* Barre de recherche */
+.blocsearch {
+  display: flex;
+  height: 40px;
+}
+.location {
+  display: flex;
+  width: 40px;
+  background-color: #f2f2f2;
+  border-radius: 1em 0 0 1em;
+  justify-content: center;
+  align-items: center;
+}
+#name {
+  border-top: 2px solid #f2f2f2;
+  border-bottom: 2px solid #f2f2f2;
+  border-left: none;
+  border-right: none;
+  padding-left: 10px;
+}
+#name:focus {
+  outline: none;
+}
+.btnsearch {
+  width: 100px;
+  color: #fff;
+  border: 2px solid #0065fc;
+  background-color: #0065fc;
+  border-radius: 0 1em 1em 0;
+  cursor: pointer;
+}
+.btnsearch:hover {
+  color: #000;
+  background-color: #beebff;
+  border: none;
+  border-radius: 0 1em 1em 0;
+}
+
+/* Icons */
+.fas {
+  color: #0065fc;
+}
+.fa-search {
+  color: #fff;
+}
+.fa-chart-line,
+.fa-map-marker-alt {
+  color: black;
+}
+
+/* Bloc filtres */
+.blocfilters {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.filters {
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+.allbuttonsfilters {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.boutonfilter {
+  height: 40px;
+  border: 2px solid #f2f2f2;
+  display: flex;
+  border-radius: 1.2em;
+  margin-right: 20px;
+  text-decoration: none;
+  align-items: center;
+  transition: 0.3s;
+}
+.boutonfilter:hover {
+  border: 2px solid #beebff;
+  background-color: #beebff;
+  box-shadow: 3px 3px 8px #f2f2f2;
+  transition: 0.3s;
+}
+
+.textfilter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #000;
+  font-weight: bold;
+  padding: 0 10px 0 10px;
+}
+
+.iconfilter {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #beebff;
+  justify-content: center;
+  align-items: center;
+  margin-left: -2px;
+}
+
+/* Info bulle */
+.blocinfo {
+  display: flex;
+  align-items: center;
+}
+
+.bulleinfo {
+  display: flex;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #f2f2f2;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
