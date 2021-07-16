@@ -13,11 +13,12 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 50px;
 }
 .logo {
-  width: 100px;
+  width: 110px;
   position: absolute;
-  top: 15px;
+  top: 40px;
 }
 
 /* Menu */
@@ -34,17 +35,19 @@ nav div {
 }
 .hebergements,
 .activites {
-  padding: 30px 20px 30px 20px;
+  font-size: 1.1em;
+  padding: 50px 35px 20px 35px;
   text-decoration: none;
   color: #000;
   border-top: 2px solid#fff;
 }
 .inscrire {
-  padding: 30px 20px 30px 20px;
+  font-size: 1.1em;
+  padding: 50px 35px 20px 35px;
   text-decoration: none;
-  font-weight: bold;
   color: #0065fc;
   border-top: 2px solid#fff;
+  font-weight: bold;
 }
 nav div a:hover {
   color: #0065fc;
@@ -53,30 +56,35 @@ nav div a:hover {
 
 /* text intro */
 .intro {
-  line-height: 80%;
+  line-height: 95%;
 }
 h1 {
-  font-size: 1em;
+  font-size: 1.6em;
 }
 h3 {
-  font-size: 0.7em;
+  font-size: 1.1em;
   font-weight: normal;
 }
 
 /* Barre de recherche */
 .blocsearch {
   display: flex;
-  height: 40px;
+  height: 60px;
+  margin-top: 25px;
+  margin-bottom: 35px;
 }
 .location {
   display: flex;
-  width: 40px;
+  width: 60px;
   background-color: #f2f2f2;
-  border-radius: 1em 0 0 1em;
+  border-radius: 20px 0 0 20px;
   justify-content: center;
   align-items: center;
 }
 #name {
+  width: 250px;
+  font-size: 1.3em;
+  font-weight: bold;
   border-top: 2px solid #f2f2f2;
   border-bottom: 2px solid #f2f2f2;
   border-left: none;
@@ -87,11 +95,12 @@ h3 {
   outline: none;
 }
 .btnsearch {
-  width: 100px;
+  width: 7.5em;
+  font-size: 1.3em;
   color: #fff;
   border: 0px solid #0065fc;
   background-color: #0065fc;
-  border-radius: 0 1em 1em 0;
+  border-radius: 0 20px 20px 0;
   cursor: pointer;
   transition: 0.3s;
 }
@@ -99,12 +108,12 @@ h3 {
   color: #000;
   background-color: #beebff;
   border: none;
-  border-radius: 0 1em 1em 0;
+  border-radius: 0 20px 20px 0;
   box-shadow: 3px 3px 8px #f2f2f2;
   transition: 0.3s;
 }
 
-/* Icons */
+/* ------------Icons------------ */
 .fas {
   color: #0065fc;
 }
@@ -115,17 +124,20 @@ h3 {
 .fa-map-marker-alt {
   color: black;
 }
+/* ----------------------------- */
 
 /* Bloc filtres */
 .blocfilters {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  margin-bottom: 10px;
 }
 
 .filters {
+  font-size: 1.2em;
   font-weight: bold;
-  margin-right: 20px;
+  margin-right: 40px;
   margin-bottom: 10px;
 }
 
@@ -134,18 +146,18 @@ h3 {
   flex-wrap: wrap;
 }
 
-.boutonfilter {
-  height: 40px;
+.buttonfilter {
+  height: 50px;
   border: 2px solid #f2f2f2;
   display: flex;
-  border-radius: 1.2em;
-  margin-right: 20px;
+  border-radius: 25px;
+  margin-right: 25px;
   margin-bottom: 10px;
   text-decoration: none;
   align-items: center;
   transition: 0.3s;
 }
-.boutonfilter:hover {
+.buttonfilter:hover {
   border: 2px solid #beebff;
   background-color: #beebff;
   box-shadow: 3px 3px 8px #f2f2f2;
@@ -153,36 +165,38 @@ h3 {
 }
 
 .textfilter {
+  font-size: 1.2em;
   display: flex;
   justify-content: space-between;
   align-items: center;
   color: #000;
   font-weight: bold;
-  padding: 0 10px 0 10px;
+  padding: 0 20px 0 20px;
 }
 
 .iconfilter {
   display: flex;
-  width: 44px;
-  height: 44px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   background-color: #beebff;
   justify-content: center;
   align-items: center;
-  margin-left: -2px;
+  margin-left: -4px;
 }
 
 /* Info bulle */
 .blocinfo {
   display: flex;
   align-items: center;
+  margin-bottom: 30px;
 }
 
 .bulleinfo {
   display: flex;
-  width: 20px;
-  height: 20px;
-  border: 1px solid #f2f2f2;
+  width: 30px;
+  height: 30px;
+  border: 2px solid #f2f2f2;
   border-radius: 50%;
   justify-content: center;
   align-items: center;
