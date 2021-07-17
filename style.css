@@ -3,7 +3,7 @@
   src: url(police/Raleway-Medium.ttf);
 }
 * {
-  font-family: "raleway";
+  font-family: "raleway", Arial, sans-serif;
 }
 body {
   margin: 0;
@@ -24,6 +24,7 @@ header {
 /* Menu */
 nav {
   display: flex;
+  flex-wrap: wrap-reverse;
 }
 nav div {
   display: flex;
@@ -60,6 +61,7 @@ nav div a:hover {
 }
 h1 {
   font-size: 1.6em;
+  line-height: 1.1em;
 }
 h3 {
   font-size: 1.1em;
