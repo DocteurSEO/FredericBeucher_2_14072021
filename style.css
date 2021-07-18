@@ -2,19 +2,19 @@
   font-family: "raleway";
   src: url(police/Raleway-Medium.ttf);
 }
+
 * {
-  font-family: "raleway", Arial, sans-serif;
+  font-family: "raleway", sans-serif;
 }
+
 body {
   margin: 0;
+}
+
+header {
   padding: 0px 50px 0px 50px;
 }
-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 50px;
-}
+
 .logo {
   width: 110px;
   position: absolute;
@@ -23,46 +23,88 @@ header {
 
 /* Menu */
 nav {
+  width: 100%;
+  height: auto;
   display: flex;
-  flex-wrap: wrap-reverse;
+  justify-content: flex-end;
+  margin-bottom: 50px;
 }
+
 nav div {
   display: flex;
-  margin-right: 0px;
-  justify-content: center;
-  align-items: center;
   width: auto;
   height: auto;
 }
-.hebergements,
-.activites {
+
+nav div a {
   font-size: 1.1em;
-  padding: 50px 35px 20px 35px;
+  padding: 50px 30px 0px 30px;
   text-decoration: none;
+  border-top: 2px solid white;
   color: #000;
-  border-top: 2px solid#fff;
-}
-.inscrire {
-  font-size: 1.1em;
-  padding: 50px 35px 20px 35px;
-  text-decoration: none;
-  color: #0065fc;
-  border-top: 2px solid#fff;
-  font-weight: bold;
 }
 nav div a:hover {
   color: #0065fc;
   border-top: 2px solid #0065fc;
 }
 
+.inscrire a {
+  color: #0065fc;
+  font-weight: bold;
+}
+.inscrire a:hover {
+  border-top: 2px solid #fff;
+}
+
+/* Breakpoint Format smartphone pour le bloc Header */
+@media all and (max-width: 800px) {
+  header {
+    padding: 0;
+    margin-bottom: 50px;
+  }
+  .logo {
+    margin-left: 20px;
+    width: 130px;
+    top: 30px;
+  }
+  nav {
+    flex-wrap: wrap-reverse;
+  }
+  .deuxancres {
+    width: 100%;
+    height: auto;
+  }
+  .deuxancres div {
+    justify-content: center;
+    text-align: center;
+    width: 50%;
+    border-bottom: 3px solid #f2f2f2;
+  }
+  .deuxancres div a {
+    width: 100%;
+    height: auto;
+    padding-bottom: 20px;
+  }
+  .deuxancres div a:hover {
+    border-top: 2px solid #fff;
+  }
+  .deuxancres div:hover {
+    border-bottom: 3px solid #0065fc;
+  }
+}
+/*------------------------------------------------*/
+
 /* text intro */
 .intro {
   line-height: 95%;
+  padding: 0px 50px 0px 50px;
 }
+
 h1 {
   font-size: 1.6em;
   line-height: 1.1em;
 }
+
 h3 {
   font-size: 1.1em;
   font-weight: normal;
@@ -74,7 +116,9 @@ h3 {
   height: 60px;
   margin-top: 25px;
   margin-bottom: 35px;
+  padding: 0px 50px 0px 50px;
 }
+
 .location {
   display: flex;
   width: 60px;
@@ -83,6 +127,7 @@ h3 {
   justify-content: center;
   align-items: center;
 }
+
 #name {
   width: 250px;
   font-size: 1.3em;
@@ -96,6 +141,7 @@ h3 {
 #name:focus {
   outline: none;
 }
+
 .btnsearch {
   width: 7.5em;
   font-size: 1.3em;
@@ -108,7 +154,7 @@ h3 {
 }
 .btnsearch:hover {
   color: #000;
-  background-color: #beebff;
+  background-color: #deebff;
   border: none;
   border-radius: 0 20px 20px 0;
   box-shadow: 3px 3px 8px #f2f2f2;
@@ -134,6 +180,7 @@ h3 {
   flex-wrap: wrap;
   align-items: center;
   margin-bottom: 10px;
+  padding: 0px 50px 0px 50px;
 }
 
 .filters {
@@ -160,8 +207,8 @@ h3 {
   transition: 0.3s;
 }
 .buttonfilter:hover {
-  border: 2px solid #beebff;
-  background-color: #beebff;
+  border: 2px solid #deebff;
+  background-color: #deebff;
   box-shadow: 3px 3px 8px #f2f2f2;
   transition: 0.3s;
 }
@@ -181,7 +228,7 @@ h3 {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background-color: #beebff;
+  background-color: #deebff;
   justify-content: center;
   align-items: center;
   margin-left: -4px;
@@ -192,6 +239,7 @@ h3 {
   display: flex;
   align-items: center;
   margin-bottom: 30px;
+  padding: 0px 50px 0px 50px;
 }
 
 .bulleinfo {
