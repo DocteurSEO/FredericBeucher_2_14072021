@@ -21,7 +21,7 @@ header {
   top: 40px;
 }
 
-/* Menu */
+/* ----------Menu---------- */
 nav {
   width: 100%;
   height: auto;
@@ -54,9 +54,10 @@ nav div a:hover {
 }
 .inscrire a:hover {
   border-top: 2px solid #fff;
+  color: #deebff;
 }
 
-/* Breakpoint Format smartphone pour le bloc Header */
+/* ----------1 seul breakpoint pour le header à 800px---------- */
 @media all and (max-width: 800px) {
   header {
     padding: 0;
@@ -94,23 +95,23 @@ nav div a:hover {
 }
 /*------------------------------------------------*/
 
-/* text intro */
+/* ----------text intro---------- */
 .intro {
   line-height: 95%;
   padding: 0px 50px 0px 50px;
 }
 
-h1 {
+.intro h1 {
   font-size: 1.6em;
   line-height: 1.1em;
 }
 
-h3 {
+.intro p {
   font-size: 1.1em;
   font-weight: normal;
 }
 
-/* Barre de recherche */
+/* ----------Barre de recherche---------- */
 .blocsearch {
   display: flex;
   height: 60px;
@@ -154,14 +155,13 @@ h3 {
 }
 .btnsearch:hover {
   color: #000;
-  background-color: #deebff;
+  background-color: #f2f2f2;
   border: none;
   border-radius: 0 20px 20px 0;
-  box-shadow: 3px 3px 8px #f2f2f2;
   transition: 0.3s;
 }
 
-/* ------------Icons------------ */
+/* ------Couleurs des icones------ */
 .fas {
   color: #0065fc;
 }
@@ -172,9 +172,12 @@ h3 {
 .fa-map-marker-alt {
   color: black;
 }
-/* ----------------------------- */
+.grey {
+  color: #f2f2f2;
+}
+/* ------------------------------- */
 
-/* Bloc filtres */
+/* ----------Bloc filtres---------- */
 .blocfilters {
   display: flex;
   flex-wrap: wrap;
@@ -234,7 +237,7 @@ h3 {
   margin-left: -4px;
 }
 
-/* Info bulle */
+/* ----------Info bulle (i)---------- */
 .blocinfo {
   display: flex;
   align-items: center;
@@ -252,3 +255,140 @@ h3 {
   align-items: center;
   margin-right: 10px;
 }
+
+/* ----------Une carte bloc Hébergements---------- */
+.carteheb {
+  display: inline-block;
+  border: 5px solid white;
+  width: 16.6em;
+  height: 13em;
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px 20px 20px 20px;
+  box-shadow: 2px 2px 10px #dbdbdb;
+  margin: 0px 0px 40px 40px;
+}
+.carteheb:hover {
+  transform: scale(1.03);
+  box-shadow: 0px 0px 10px #0065fc;
+}
+
+.imgheb {
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+
+.piedheb {
+  background-color: white;
+  width: 100%;
+  height: 40%;
+  position: absolute;
+  bottom: 0;
+  line-height: 0.3em;
+  padding-left: 15px;
+}
+
+.nuit {
+  font-size: 14px;
+}
+
+.fa-star {
+  width: 10px;
+  padding-right: 4px;
+}
+
+/* -----Containers Hébergements----- */
+.deuxcontainers {
+  display: flex;
+  justify-content: space-between;
+  height: 660px;
+}
+
+.containerheb {
+  background-color: #f2f2f2;
+  border-radius: 20px 20px 20px 20px;
+  width: 100%;
+  margin: 0px 0px 0px 50px;
+  padding-right: 40px;
+}
+
+.containercartes {
+  justify-content: space-between;
+}
+
+h3 {
+  height: 20px;
+  padding-left: 40px;
+  padding-top: 20px;
+}
+
+.affplus {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  padding-left: 40px;
+}
+.affplus:hover {
+  color: #0065fc;
+}
+
+/* -----Containers Populaires----- */
+aside {
+  background-color: #f2f2f2;
+  border-radius: 20px 20px 20px 20px;
+  width: 45%;
+  margin: 0px 50px 0px 50px;
+}
+
+.titre-logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 40px;
+}
+
+.fa-chart-line {
+  padding-top: 20px;
+}
+.fa-chart-line:hover {
+  color: #0065fc;
+}
+
+/* -----Containers Activités----- */
+.blocactivites {
+  border: 1px solid black;
+}
+.blocactivites h3 {
+  padding-left: 50px;
+}
+
+/* -----Position des photos dans leur cadre----- */
+/* ---Photos du containers Hébergements--- */
+.cannebiere {
+  position: absolute;
+  top: -30px;
+}
+.port {
+  position: absolute;
+  top: -30px;
+}
+.mouettes {
+  position: absolute;
+  top: -35px;
+}
+.mer {
+  position: absolute;
+  top: -60px;
+}
+.panier {
+  position: absolute;
+  top: -10px;
+}
+.amina {
+  position: absolute;
+  top: -140px;
+}
+/* ---Photos du containers Populaires--- */
+/* ---Photos du containers Activités--- */
+/* ------------------------------------------- */
