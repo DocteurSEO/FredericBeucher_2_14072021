@@ -392,3 +392,33 @@ aside {
 /* ---Photos du containers Populaires--- */
 /* ---Photos du containers Activités--- */
 /* ------------------------------------------- */
+
+/* ----------Footer---------- */
+footer {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  height: auto;
+  background-color: #f2f2f2;
+}
+article {
+  padding: 20px 0 50px 50px;
+  width: 30%;
+}
+article h4 {
+  font-size: large;
+  line-height: 0.2em;
+}
+footer ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+footer a {
+  text-decoration: none;
+  color: #000;
+  line-height: 2em;
+}
+footer a:hover {
+  color: #0065fc;
+}
