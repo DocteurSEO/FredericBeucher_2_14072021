@@ -9,6 +9,8 @@
 
 body {
   margin: 0;
+  font-size: 1em;
+  line-height: 1em;
 }
 
 header {
@@ -285,7 +287,7 @@ nav div a:hover {
   height: 40%;
   position: absolute;
   bottom: 0;
-  line-height: 0.3em;
+  line-height: 0.1em;
   padding-left: 15px;
 }
 
@@ -298,19 +300,21 @@ nav div a:hover {
   padding-right: 4px;
 }
 
-/* -----Containers Hébergements----- */
+/* -----Containers Hébergements et Aside----- */
 .deuxcontainers {
   display: flex;
   justify-content: space-between;
   height: 660px;
 }
 
+/* -----Container Hébergements----- */
 .containerheb {
   background-color: #f2f2f2;
   border-radius: 20px 20px 20px 20px;
   width: 100%;
   margin: 0px 0px 0px 50px;
   padding-right: 40px;
+  padding-top: 20px;
 }
 
 .containercartes {
@@ -319,8 +323,8 @@ nav div a:hover {
 
 h3 {
   height: 20px;
-  padding-left: 40px;
-  padding-top: 20px;
+  margin-left: 40px;
+  padding-top: 0px;
 }
 
 .affplus {
@@ -335,24 +339,73 @@ h3 {
 
 /* -----Containers Populaires----- */
 aside {
+  display: flex;
+  flex-direction: column;
   background-color: #f2f2f2;
   border-radius: 20px 20px 20px 20px;
   width: 45%;
   margin: 0px 50px 0px 50px;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  align-items: center;
 }
 
+.containercartespop {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 .titre-logo {
   display: flex;
   justify-content: space-between;
+  width: 100%;
   align-items: center;
-  padding-right: 40px;
 }
 
 .fa-chart-line {
-  padding-top: 20px;
+  padding-right: 40px;
 }
 .fa-chart-line:hover {
   color: #0065fc;
+}
+
+.cartepop {
+  border: 5px solid white;
+  width: 22em;
+  height: 9em;
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px 20px 20px 20px;
+  box-shadow: 2px 2px 10px #dbdbdb;
+}
+.cartepop:hover {
+  transform: scale(1.03);
+  box-shadow: 0px 0px 10px #0065fc;
+}
+
+.sidepop {
+  background-color: white;
+  width: 55%;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  line-height: 0.3em;
+  padding-left: 20px;
+}
+.blocstarpop {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 10px;
+}
+aside h4 {
+  line-height: 1.4em;
+  position: relative;
+  top: -12px;
+}
+aside .nuit {
+  position: relative;
+  top: -20px;
 }
 
 /* -----Containers Activités----- */
@@ -360,7 +413,7 @@ aside {
   border: 1px solid black;
 }
 .blocactivites h3 {
-  padding-left: 50px;
+  margin-left: 50px;
 }
 
 /* -----Position des photos dans leur cadre----- */
@@ -390,22 +443,39 @@ aside {
   top: -140px;
 }
 /* ---Photos du containers Populaires--- */
+.soleil {
+  position: absolute;
+  left: -45px;
+  top: px;
+  width: 60%;
+}
+.coeur {
+  position: absolute;
+  left: -35px;
+  top: 0px;
+  width: 55%;
+}
+.blanc {
+  position: absolute;
+  top: -70px;
+  width: 40%;
+}
 /* ---Photos du containers Activités--- */
 /* ------------------------------------------- */
 
 /* ----------Footer---------- */
 footer {
   width: 100%;
+  height: auto;
   display: flex;
   flex-wrap: wrap;
-  height: auto;
   background-color: #f2f2f2;
 }
 article {
   padding: 20px 0 50px 50px;
   width: 30%;
 }
-article h4 {
+article .titrecol {
   font-size: large;
   line-height: 0.2em;
 }
