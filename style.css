@@ -55,6 +55,7 @@ nav div a:hover {
 .inscrire a {
   color: #0065fc;
   font-weight: bold;
+  margin-right: 50px;
 }
 .inscrire a:hover {
   border-top: 2px solid #fff;
@@ -101,6 +102,9 @@ nav div a:hover {
   }
   .deuxancres div:hover {
     border-bottom: 3px solid #0065fc;
+  }
+  .inscrire a {
+    margin-right: 0px;
   }
 }
 /*------------------------------------------------*/
@@ -169,6 +173,7 @@ nav div a:hover {
   transition: 0.3s;
 }
 
+/* ----------1 seul breakpoint pour le Bloc Search à 800px---------- */
 @media all and (max-width: 800px) {
   .blocsearch {
     margin-top: 40px;
@@ -179,17 +184,20 @@ nav div a:hover {
   .btnsearch {
     display: none;
   }
-  .fa-search {
+
+  .btnloupe {
     display: flex;
-    align-items: center;
     justify-content: center;
-    font-size: 1.4em;
-    width: 80px;
-    border-radius: 20px;
-    color: #fff;
+    align-items: center;
+    width: 60px;
+    height: 60px;
     background-color: #0065fc;
-    margin-left: -30px;
+    border-radius: 20px;
   }
+  .blocloupe a {
+    text-decoration: none;
+  }
+
   #name {
     width: 100%;
   }
@@ -534,11 +542,13 @@ footer {
   display: flex;
   flex-wrap: wrap;
   background-color: #f2f2f2;
+  padding-top: 30px;
 }
 article {
-  padding: 20px 0 50px 50px;
-  width: 30%;
+  padding: 0px 5px 20px 50px;
+  width: 450px;
 }
+
 article .titrecol {
   font-size: large;
   line-height: 0.2em;
