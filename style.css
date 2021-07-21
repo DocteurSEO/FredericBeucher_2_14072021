@@ -9,20 +9,22 @@
 
 body {
   margin: 0;
-  font-size: 1em;
-  line-height: 1em;
-}
-
-header {
-  padding: 0px 50px 0px 50px;
+  font-size: 16px;
 }
 
 .logo {
   width: 110px;
   position: absolute;
   top: 40px;
+  left: 50px;
 }
 
+.intro,
+.blocsearch,
+.blocfilters,
+.blocinfo {
+  margin: 0px 50px 0px 50px;
+}
 /* ----------Menu---------- */
 nav {
   width: 100%;
@@ -62,14 +64,20 @@ nav div a:hover {
 /* ----------1 seul breakpoint pour le header à 800px---------- */
 @media all and (max-width: 800px) {
   header {
-    padding: 0;
     margin-bottom: 50px;
   }
   .logo {
-    margin-left: 20px;
-    width: 130px;
+    position: absolute;
     top: 30px;
+    left: 30px;
   }
+  .intro,
+  .blocsearch,
+  .blocfilters,
+  .blocinfo {
+    margin: 0px 30px 0px 30px;
+  }
+
   nav {
     flex-wrap: wrap-reverse;
   }
@@ -100,7 +108,6 @@ nav div a:hover {
 /* ----------text intro---------- */
 .intro {
   line-height: 95%;
-  padding: 0px 50px 0px 50px;
 }
 
 .intro h1 {
@@ -119,7 +126,6 @@ nav div a:hover {
   height: 60px;
   margin-top: 25px;
   margin-bottom: 35px;
-  padding: 0px 50px 0px 50px;
 }
 
 .location {
@@ -185,7 +191,6 @@ nav div a:hover {
   flex-wrap: wrap;
   align-items: center;
   margin-bottom: 10px;
-  padding: 0px 50px 0px 50px;
 }
 
 .filters {
@@ -242,9 +247,8 @@ nav div a:hover {
 /* ----------Info bulle (i)---------- */
 .blocinfo {
   display: flex;
-  align-items: center;
+  align-items: baseline;
   margin-bottom: 30px;
-  padding: 0px 50px 0px 50px;
 }
 
 .bulleinfo {
